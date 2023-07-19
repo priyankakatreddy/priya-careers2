@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jovian Careers</title>
-    <style>
-      h1{
-        font-size: 40px;
-        font- family: Roboto;
-        font- weight: normal;
-        color: rgb(100,100,100)
-        text-align: center;
-      }
-      #banner{
-        width: 100%;
-        height: 360px;
-        object: fit cover;
-      }
-      h2{
-        font-family: Roboto;
-        font-size: 32px;
-        color:rgb(100,100,100);
-        text-align: center;
-        font-weight: normal;
-      }
-      .bodytext{
-        font- family: Roboto;
-        color: rbg(80,80,80);
-      }
-      #container{
-        max- width: 720px;
-        margin: 0 auto;
-      }
-    </style>
+    <title>priya careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha389ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
+     <sytle>
+           #banner1{
+              height: 360px;
+               width : 100%;
+              object-filt:cover;
+            }
+      </sytle>
+       </head>
+       <body>
+       <div id="container">
+       <h1 class="text-center mt-2 mb-4">{{company_name}}careers</h1>
+       <img class="img-fluid" id="banner1" src= "https://replit.com/@katreddypriyank/we-careers#templates/static/banner1.jpg.jpg">
     
-   </head>
-  <body>
-     <div id= "container">
-     <h1>  psk </h1>
-     <img id="banner" src= "https://replit.com/@katreddypriyank/we-careers/templates/static/banner.jpg">
-      <h2>About psk</h2>
-    <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      <h2 class="text-center">About psk</h2>
+      <p class="lead">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddoeiusmod tempor 
        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-      culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Open Positions</h2>  
-     <p>TODO - show the jobs here</p>
-   <div style ="text-align:center;">  
-    <button>contact us</button>
-     <p>Copyrightg 2022,Spk</p>
-    </div>
-    </div>
-    </body>
-   </html>
+       fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+       culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>  
+     <div>
+       {%for jobs in jobs%}
+       {% include'jobitem.html' %}
+       {% endfor %}
+     </div>
+     <div class="text-center">  
+     <button class="btn btn-primary btn-lg">contact us</button>
+     <pclass="mt-4">Copyrightg 2022,Spk</p>
+     </div>
+     </div>
+     </body>
+     </html>
 
 
