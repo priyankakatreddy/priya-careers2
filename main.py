@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask , render_template , jsonify 
 
 app = Flask(__name__)
 JOBS=[
@@ -24,7 +24,7 @@ JOBS=[
       'id': 4,
       'title':'Backend Engineer ',
       'location':'San Franciso,USA',
-      'salary':'$ 120,000'
+      'salary':'$ 150,000'
      },
 
   ]
